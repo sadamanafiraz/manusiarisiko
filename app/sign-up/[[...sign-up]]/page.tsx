@@ -1,3 +1,3 @@
-import { SignUp } from '@clerk/nextjs';
+import TeacherAuth from '../../../components/TeacherAuth';
 export const dynamic='force-dynamic';
-export default function Page(){return <main style={{minHeight:'100vh',display:'grid',placeItems:'center',background:'#eff0de'}}><SignUp /></main>}
+export default function Page(){return <TeacherAuth mode="sign-up" /> }

@@ -21,10 +21,10 @@
 .result-stage{display:grid;grid-template-columns:minmax(100px,1fr) minmax(240px,1.65fr) minmax(100px,1fr);align-items:center;gap:20px;max-width:1100px;margin:auto}
 .result-copy{min-width:0;position:relative;z-index:1}
 .result-copy .lead{font-size:12px;line-height:1.75}
-.result-guardian{margin:0;min-width:0;align-self:center}
-.result-guardian img{display:block;width:100%;height:auto;max-height:390px;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(0 8px 9px #5b48241a);transition:transform .25s ease}
+.result-guardian{margin:0;min-width:0;width:100%;max-width:260px;align-self:center;justify-self:center}
+.result-portrait{display:block;aspect-ratio:1024/1255;overflow:hidden}
+.result-guardian img{display:block;width:100%;height:auto;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(0 8px 9px #5b48241a);transition:transform .25s ease}
 .result-guardian:hover img{transform:translateY(-5px)}
-.result-guardian figcaption{margin-top:8px;color:#7d704d;font-family:var(--serif);font-size:15px;letter-spacing:1px}
-@media(max-width:1000px){.resultshero{padding:28px 22px}.result-stage{gap:12px;grid-template-columns:minmax(80px,1fr) minmax(210px,1.8fr) minmax(80px,1fr)}.result-copy h2{font-size:23px}.result-guardian img{max-height:320px}}
-@media(max-width:600px){.resultshero{padding:24px 10px}.result-stage{grid-template-columns:minmax(40px,.7fr) minmax(145px,1.8fr) minmax(40px,.7fr);gap:7px}.result-copy .mri{font-size:52px}.result-copy h2{font-size:20px}.result-copy .lead{font-size:11px}.result-copy .sheetnote{font-size:9px}.result-copy .tag{font-size:8px;padding:5px}.result-guardian img{max-height:240px}.result-guardian figcaption{font-size:10px;letter-spacing:0}.resultshero .eyebrow{font-size:9px;letter-spacing:1px}}
+@media(max-width:1000px){.resultshero{padding:28px 22px}.result-stage{gap:12px;grid-template-columns:minmax(80px,1fr) minmax(210px,1.8fr) minmax(80px,1fr)}.result-copy h2{font-size:23px}}
+@media(max-width:600px){.resultshero{padding:24px 10px}.result-stage{grid-template-columns:minmax(40px,.7fr) minmax(145px,1.8fr) minmax(40px,.7fr);gap:7px}.result-copy .mri{font-size:52px}.result-copy h2{font-size:20px}.result-copy .lead{font-size:11px}.result-copy .sheetnote{font-size:9px}.result-copy .tag{font-size:8px;padding:5px}.resultshero .eyebrow{font-size:9px;letter-spacing:1px}}
 @media(prefers-reduced-motion:reduce){.result-guardian:hover img{transform:none}}

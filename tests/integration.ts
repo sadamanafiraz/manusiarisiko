@@ -8,4 +8,6 @@ try{
  const {handle}=await import('../lib/riskman/handler');
  const {runApiTests}=await import('./api.test.mjs');
  await runApiTests({handle,db});
+ const {runCaseTests}=await import('./cases.test');
+ await runCaseTests({handle,db});
 }finally{db.close();rmSync(dir,{recursive:true,force:true});}

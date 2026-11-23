@@ -1,6 +1,6 @@
 {
   "name": "riskman-simulation",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": true,
   "type": "module",
   "engines": {
@@ -28,5 +28,10 @@
     "@types/react-dom": "^19.2.3",
     "tsx": "^4.20.0",
     "typescript": "5.9.3"
+  },
+  "overrides": {
+    "exceljs": {
+      "uuid": "11.1.1"
+    }
   }
 }

@@ -4,7 +4,7 @@ export const runtime='nodejs';
 export const dynamic='force-dynamic';
 async function route(req:Request){
  const path=new URL(req.url).pathname;
- if(path!=='/api/me'&&!path.startsWith('/api/classes'))return handle(req,null);
+ if(path!=='/api/me'&&!path.startsWith('/api/classes')&&!path.startsWith('/api/cases'))return handle(req,null);
  try {
   const session=await auth();let identity:Identity|null=null;
   if(session.userId){const user=await currentUser();const email=user?.emailAddresses.find(e=>e.id===user.primaryEmailAddressId&&e.verification?.status==='verified')?.emailAddress.toLowerCase();

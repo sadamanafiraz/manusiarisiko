@@ -48,6 +48,7 @@ export default function TeacherAuth({ mode }: { mode: 'sign-in' | 'sign-up' }) {
   return (
     <main style={{ minHeight: '100dvh', display: 'grid', placeItems: 'center', background: '#eff0de', padding: 24, boxSizing: 'border-box' }}>
       <div>
+        <img src="/branding/riskman-logo.png" alt="Riskman" style={{display:'block',width:260,maxWidth:'100%',margin:'0 auto 20px'}} />
         <p style={{ textAlign: 'center', fontFamily: 'Georgia, serif', color: '#294839' }} role="status">
           {ready ? 'Login berhasil. Membuka Riskman…' : 'Masuk ke ruang pengajar Riskman'}
         </p>
